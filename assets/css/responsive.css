@@ -1,0 +1,73 @@
+/* PC */
+@media (min-width: 992px) {
+    
+}
+
+
+
+/* Tablet & Mobile*/
+@media (max-width: 991.98px) {
+    /* 1. ẩn navbar */
+    .navbar{
+        display: none;
+    }
+
+    /* 2. Chuyển logo vào giữa */
+    .header-top{
+        position: relative;
+    }
+
+    .header__logo{
+        position: absolute;
+        left: 50%;
+        translate: -50% -50%;
+    }
+
+    /* 3. căn vị trí menu icon */
+    .menu-header__icon{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        top: 34px;
+        left: 26px;
+        color: #fff;
+    }
+
+    /* 4. overplay */
+    .menu-overplay{
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        /* bình thường ẩn overplay đi */
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+    }
+
+    /* 5. kiểm tra xong menu-checkbox:checked -> menu-overplay */
+    .menu-overplay:checked ~ .menu-overplay{
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+
+
+
+/* Mobile */
+@media (max-width: 767.9px) {
+    
+}
+
+/* tạm ẩn không liên quan */
+main,
+.footer,
+.hero{
+    display: none;
+}
