@@ -137,6 +137,37 @@
     .service-item{
         text-align: start;
     }
+
+    /* khoi work */
+    .work__list{
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    /* khoi about */
+    .about-row{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .about__img--small{
+        display: none;
+    }
+    
+    .about__media{
+        width: 100%;
+    }
+
+    .about__img--big{
+        width: 100%;
+        margin: 25px auto;
+        border-radius: 15px;
+    }
+    
+    .about-content{
+        width: 90%;
+        text-align: center;
+    }
 }
 
 
