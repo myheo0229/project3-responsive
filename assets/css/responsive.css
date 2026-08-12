@@ -45,9 +45,17 @@
     }
 
     /* 5. kiểm tra xong menu-checkbox:checked -> menu-overplay */
-    .menu-overplay:checked ~ .menu-overplay{
+    .menu-checkbox:checked ~ .menu-overplay{
         opacity: 1;
         visibility: visible;
+    }
+
+    /* 6. menu drawer */
+    .menu-drawer{
+        position: fixed;
+        background-color: black;
+        inset: 0 40% 0 0;
+        z-index: 1;
     }
 }
 
